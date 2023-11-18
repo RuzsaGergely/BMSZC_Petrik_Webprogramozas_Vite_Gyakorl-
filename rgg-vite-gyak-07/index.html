@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMSZC Petrik - 2/14. SL - Webprog - Vite gyakorlás - 7. feladat</title>
+</head>
+<body>
+  <div id="regbejDiv">
+    <button onclick="changeForm()">Bejelentkezés / Regisztráció</button>
+    <br><br>
+    <div id="bejelentkezesForm" style="border: 1px solid black; width: 400px; padding: 10px;">
+      <p style="text-align: center;"><b>Bejelentkezés</b></p>
+      <label for="loginUsername">Felhasználónév</label><br>
+      <input type="text" id="loginUsername"><br>
+      <label for="loginPassword">Jelszó</label><br>
+      <input type="password" id="loginPassword"><br><br>
+      <button onclick="initiateLogin()">Bejelentkezés</button>
+    </div>
+    <div id="regisztracioForm" style="border: 1px solid black; width: 400px; padding: 10px;" hidden>
+      <p style="text-align: center;"><b>Regisztráció</b></p>
+      <label for="regUsername">Felhasználónév</label><br>
+      <input type="text" id="regUsername"><br>
+      <label for="regPassword">Jelszó</label><br>
+      <input type="password" id="regPassword"><br><br>
+      <button onclick="initiateRegister()">Regisztráció</button>
+    </div>
+  </div>
+  <div id="pageDiv" hidden>
+    <h1>Üdvözöllek!</h1>
+    <p>Bejelentkezett felhasználó: <span id="loggedIn"></span></p>
+    <p>Lorem ipsum dolorem sit amet.</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
